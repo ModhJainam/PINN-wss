@@ -14,10 +14,10 @@ We have modernized the codebase to use **`uv`** for fast, reproducible environme
 Install `uv` (an extremely fast Python package manager):
 ```bash
 # On macOS/Linux
-curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # On Windows (PowerShell)
-powershell -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ````
 
 ### 2\. Installation
@@ -25,7 +25,7 @@ powershell -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/insta
 Clone the repo and sync the environment. This automatically installs Python 3.9, VTK, and other dependencies.
 
 ```bash
-git clone [https://github.com/amir-cardiolab/PINN-wss.git](https://github.com/amir-cardiolab/PINN-wss.git)
+git clone https://github.com/ModhJainam/PINN-wss
 cd PINN-wss
 
 # Initialize the environment
@@ -33,7 +33,7 @@ uv sync
 
 # IMPORTANT: Install PyTorch with CUDA support (Recommended for GPU training)
 # Example for CUDA 12.6:
-uv pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu126](https://download.pytorch.org/whl/cu126)
+uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
 
 ### 3\. Configuration
