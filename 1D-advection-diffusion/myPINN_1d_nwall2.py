@@ -18,11 +18,11 @@ import math
 
 def geo_train(device,x_in,xb,cb,batchsize,learning_rate,epochs,path,Flag_batch,C_analytical,Vel,Diff):
 	if (Flag_batch):
-	 x = torch.Tensor(x_in)	
-	 dataset = TensorDataset(x,x)
-	 dataloader = DataLoader(dataset, batch_size=batchsize,shuffle=True,num_workers = 0,drop_last = False )
+		x = torch.Tensor(x_in)	
+		dataset = TensorDataset(x,x)
+		dataloader = DataLoader(dataset, batch_size=batchsize,shuffle=True,num_workers = 0,drop_last = False )
 	else:
-	 x = torch.Tensor(x_in)  
+		x = torch.Tensor(x_in)  
 	h_n = 100 
 	input_n = 1 # this is what our answer is a function of. 
 	class Swish(nn.Module):
