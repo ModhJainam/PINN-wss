@@ -1,0 +1,27 @@
+[project]
+name = "pinn-wss"
+version = "0.1.0"
+description = "Uncovering near-wall blood flow from sparse data with physics-informed neural networks"
+readme = "README.md"
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "vtk",
+    "pyDOE",
+]
+
+# This section prevents the "Failed to build" error
+[tool.uv]
+package = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# This fixes the deprecation warning
+[dependency-groups]
+dev = [
+    "jupyter",
+]
