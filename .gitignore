@@ -1,4 +1,4 @@
 .venv
 venv
 uv.lock
-experiments
+experiments/.
